@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 import 'package:netflix_app/core/colors/colors.dart';
 import 'package:netflix_app/core/themes.dart';
 
@@ -29,7 +30,7 @@ class AppBarWidget extends StatelessWidget {
             size: 30,
           ),
         ),
-        const SizedBox(width: 10),
+        const Gap(10),
         const Padding(
           padding: EdgeInsets.all(5),
           child: CircleAvatar(

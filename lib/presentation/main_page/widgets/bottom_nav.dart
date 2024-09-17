@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:netflix_app/core/colors/colors.dart';
+import 'package:netflix_app/core/themes.dart';
 
 ValueNotifier<int> indexChangeNotifier = ValueNotifier(0);
 
@@ -14,6 +15,8 @@ class BottomNavigationWidget extends StatelessWidget {
         return BottomNavigationBar(
           currentIndex: newIndex,
           onTap: (index) => indexChangeNotifier.value = index,
+          selectedLabelStyle: botNavTextStyle ,
+          unselectedLabelStyle: botNavTextStyleU,
           selectedItemColor: bottomNavigationBarSelectedTextColor,
           unselectedItemColor: bottomNavigationBarUnselectedTextColor,
           type: BottomNavigationBarType.fixed,
